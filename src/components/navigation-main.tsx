@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import { ModeToggle } from '@/components/mode-toggle';
 
-export default function SideNavigation() {
+export default function NavigationMain() {
 	return (
 		<div className='hidden md:flex h-screen flex-col justify-between border-e bg-white'>
 			<div className='px-4 py-6'>
 				<div className='flex items-center justify-between'>
-					<Image src='/logo.svg' alt='Logo' />
+					<Image src='/logo.svg' width={30} height={30} alt='Logo' />
 					<ModeToggle />
 				</div>
 
