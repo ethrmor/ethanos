@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import React from 'react';
 import { Manrope } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
-import { Sidebar, TopNav, NavigationMenu, MobileSidebar } from '@/components/navigation';
+import { Sidebar, TopNav, NavigationMenu } from '@/components/navigation';
 
 const manrope = Manrope({ subsets: ['latin'] });
 
@@ -17,16 +17,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 		<html lang='en'>
 			<body className={manrope.className}>
 				<ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-					<div className='flex'>
+					<div className='flex min-h-screen max-h-screen'>
 						<Sidebar>
 							<NavigationMenu />
 						</Sidebar>
-						<MobileSidebar>
-							<NavigationMenu />
-						</MobileSidebar>
-						<div className='flex-1'>
+						<div className='flex flex-1 flex-col'>
 							<TopNav />
-							<main className='flex min-h-full flex-col items-center justify-between overflow-auto'>
+							<main className='flex flex-col items-center justify-between overflow-auto p-6'>
 								{children}
 							</main>
 						</div>

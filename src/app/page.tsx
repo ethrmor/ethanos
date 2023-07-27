@@ -1,10 +1,5 @@
-import { ModeToggle } from '@/components/mode-toggle';
 import Image from 'next/image';
 
 export default function Home() {
-	return (
-		<main className='flex min-h-full flex-col items-center justify-between p-24'>
-			This is the main part.
-		</main>
-	);
+	return <div>This is the main section.</div>;
 }

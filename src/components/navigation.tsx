@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { ModeToggle } from './mode-toggle';
+import { Button } from './ui/button';
+import { Menu } from 'lucide-react';
 
 type NavProps = {
 	children: React.ReactNode;
@@ -160,20 +162,23 @@ function NavigationMenu() {
 	);
 }
 
-function MobileSidebar({ children }: NavProps) {
-	return <nav className='flex md:hidden p-4 justify-between'>{children}</nav>;
-}
-
 function TopNav() {
 	return (
 		<nav className='flex items-center justify-between md:justify-end px-4 py-2 border-b border-gray-100'>
 			<Sheet>
-				<SheetTrigger className='md:hidden'>Open</SheetTrigger>
-				<SheetContent side='left'></SheetContent>
+				<SheetTrigger className='md:hidden'>
+					<Button variant='outline' size='icon'>
+						<Menu className='h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0' />
+						<span className='sr-only'>Toggle theme</span>
+					</Button>
+				</SheetTrigger>
+				<SheetContent side='left'>
+					<NavigationMenu />
+				</SheetContent>
 			</Sheet>
 			<ModeToggle />
 		</nav>
 	);
 }
 
-export { Sidebar, NavigationMenu, MobileSidebar, TopNav };
+export { Sidebar, NavigationMenu, TopNav };
