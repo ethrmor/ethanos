@@ -1,13 +1,25 @@
 import Image from 'next/image';
-import { ModeToggle } from '@/components/mode-toggle';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { ModeToggle } from './mode-toggle';
 
-export default function NavigationMain() {
+type NavProps = {
+	children: React.ReactNode;
+};
+
+function Sidebar({ children }: NavProps) {
 	return (
 		<div className='hidden md:flex h-screen flex-col justify-between border-e bg-white'>
-			<div className='px-4 py-6'>
-				<div className='flex items-center justify-between'>
+			{children}
+		</div>
+	);
+}
+
+function NavigationMenu() {
+	return (
+		<>
+			<div className='flex flex-col px-4 py-6'>
+				<div className='flex items-center px-4'>
 					<Image src='/logo.svg' width={30} height={30} alt='Logo' />
-					<ModeToggle />
 				</div>
 
 				<ul className='mt-6 space-y-1'>
@@ -126,7 +138,6 @@ export default function NavigationMain() {
 					</li>
 				</ul>
 			</div>
-
 			<div className='sticky inset-x-0 bottom-0 border-t border-gray-100'>
 				<a href='#' className='flex items-center gap-2 bg-white p-4 hover:bg-gray-50'>
 					<Image
@@ -136,7 +147,6 @@ export default function NavigationMain() {
 						width={40}
 						className='rounded-full object-cover'
 					/>
-
 					<div>
 						<p className='text-xs'>
 							<strong className='block font-medium'>Ethan Morris</strong>
@@ -146,6 +156,24 @@ export default function NavigationMain() {
 					</div>
 				</a>
 			</div>
-		</div>
+		</>
 	);
 }
+
+function MobileSidebar({ children }: NavProps) {
+	return <nav className='flex md:hidden p-4 justify-between'>{children}</nav>;
+}
+
+function TopNav() {
+	return (
+		<nav className='flex items-center justify-between md:justify-end px-4 py-2 border-b border-gray-100'>
+			<Sheet>
+				<SheetTrigger className='md:hidden'>Open</SheetTrigger>
+				<SheetContent side='left'></SheetContent>
+			</Sheet>
+			<ModeToggle />
+		</nav>
+	);
+}
+
+export { Sidebar, NavigationMenu, MobileSidebar, TopNav };

@@ -3,8 +3,7 @@ import type { Metadata } from 'next';
 import React from 'react';
 import { Manrope } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
-import NavigationMain from '@/components/navigation-main';
-import NavigationMobile from '@/components/navigation-mobile';
+import { Sidebar, TopNav, NavigationMenu, MobileSidebar } from '@/components/navigation';
 
 const manrope = Manrope({ subsets: ['latin'] });
 
@@ -16,11 +15,22 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en'>
-			<body className={`${manrope.className.toString()} grid md:grid-cols-[230px_1fr] grid-cols-1`}>
+			<body className={manrope.className}>
 				<ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-					<NavigationMain />
-					<NavigationMobile />
-					{children}
+					<div className='flex'>
+						<Sidebar>
+							<NavigationMenu />
+						</Sidebar>
+						<MobileSidebar>
+							<NavigationMenu />
+						</MobileSidebar>
+						<div className='flex-1'>
+							<TopNav />
+							<main className='flex min-h-full flex-col items-center justify-between overflow-auto'>
+								{children}
+							</main>
+						</div>
+					</div>
 				</ThemeProvider>
 			</body>
 		</html>
