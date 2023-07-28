@@ -23,8 +23,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 						</Sidebar>
 						<div className='flex flex-1 flex-col'>
 							<TopNav />
-							<main className='flex flex-col items-center justify-between overflow-auto p-6'>
-								{children}
+							<main className='flex flex-col items-center justify-between overflow-auto px-4 py-8'>
+								<div className='max-w-2xl mx-auto'>{children}</div>
 							</main>
 						</div>
 					</div>
