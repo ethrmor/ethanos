@@ -8,7 +8,10 @@ import { Sidebar, TopNav, NavigationMenu } from '@/components/navigation';
 const manrope = Manrope({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'ethanmorr.is',
+	title: {
+		template: '%s | Ethan Morris',
+		default: 'Ethan Morris',
+	},
 	description: 'A personal website for Ethan Morris, the 100x dev',
 };
 
