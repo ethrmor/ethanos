@@ -26,7 +26,7 @@ type NavProps = {
 
 function Sidebar({ children }: NavProps) {
   return (
-    <div className='hidden h-screen flex-col justify-between border-e bg-white md:flex'>
+    <div className='hidden h-screen flex-col justify-between border-e bg-white dark:bg-gray-950 md:flex'>
       {children}
     </div>
   );
@@ -40,12 +40,12 @@ function NavigationMenu() {
           <Image src='/logo.svg' width={30} height={30} alt='Logo' />
         </div>
 
-        <div>
+        <div className='overflow-auto'>
           <ul className='my-6 space-y-1'>
             <li>
               <a
                 href='/'
-                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'
+                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
               >
                 <HomeIcon size={16} />
                 Home
@@ -54,7 +54,7 @@ function NavigationMenu() {
             <li>
               <a
                 href='/projects'
-                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'
+                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
               >
                 <Code2Icon size={16} />
                 Projects
@@ -63,7 +63,7 @@ function NavigationMenu() {
             <li>
               <a
                 href='/writing'
-                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'
+                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
               >
                 <PenLineIcon size={16} />
                 Writing
@@ -78,7 +78,7 @@ function NavigationMenu() {
             <li>
               <a
                 href='/about'
-                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'
+                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
               >
                 <UserIcon size={16} />
                 About
@@ -87,7 +87,7 @@ function NavigationMenu() {
             <li>
               <a
                 href='/uses'
-                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'
+                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
               >
                 <MonitorIcon size={16} />
                 Uses
@@ -96,7 +96,7 @@ function NavigationMenu() {
             <li>
               <a
                 href='/bookmarks'
-                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'
+                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
               >
                 <BookMarkedIcon size={16} />
                 Bookmarks
@@ -105,7 +105,7 @@ function NavigationMenu() {
             <li>
               <a
                 href='/recs'
-                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'
+                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
               >
                 <ShoppingBagIcon size={16} />
                 Recs
@@ -114,7 +114,7 @@ function NavigationMenu() {
             <li>
               <a
                 href='/notes'
-                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'
+                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
               >
                 <ScrollTextIcon size={16} />
                 Notes
@@ -123,7 +123,7 @@ function NavigationMenu() {
             <li>
               <a
                 href='/contact'
-                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'
+                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
               >
                 <PhoneIcon size={16} />
                 Contact
@@ -139,7 +139,7 @@ function NavigationMenu() {
               <a
                 href='https://github.com/ermorrpheus'
                 target='_blank'
-                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'
+                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
               >
                 <GithubIcon size={16} />
                 Github
@@ -149,7 +149,7 @@ function NavigationMenu() {
               <a
                 href='https://www.twitter.com/the100xdev'
                 target='_blank'
-                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'
+                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
               >
                 <TwitterIcon size={16} />
                 Twitter
@@ -159,7 +159,7 @@ function NavigationMenu() {
               <a
                 href='https://www.linkedin.com/in/ethanmorris1/'
                 target='_blank'
-                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700'
+                className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
               >
                 <LinkedinIcon size={16} />
                 LinkedIn
@@ -169,11 +169,8 @@ function NavigationMenu() {
         </div>
       </div>
       {/* Nav Card */}
-      <div className='sticky inset-x-0 bottom-0 border-t border-gray-100'>
-        <a
-          href='#'
-          className='flex items-center gap-2 bg-white px-8 py-4 hover:bg-gray-50'
-        >
+      <div className='sticky inset-x-0 bottom-0 border-t border-gray-100 dark:border-gray-900 dark:bg-gray-950'>
+        <div className='flex items-center gap-2 px-8 py-4'>
           <Image
             alt='Man'
             src='/profile.png'
@@ -182,16 +179,16 @@ function NavigationMenu() {
             className='rounded-full object-cover'
           />
           <div>
-            <p className='text-xs'>
+            <p className='text-sm'>
               <strong className='block font-medium'>Ethan Morris</strong>
 
-              <span className='text-xs text-gray-500'>
+              <span className='text-xs text-gray-500 dark:text-gray-300'>
                 {' '}
                 Software Developer{' '}
               </span>
             </p>
           </div>
-        </a>
+        </div>
       </div>
     </>
   );
@@ -199,7 +196,7 @@ function NavigationMenu() {
 
 function TopNav() {
   return (
-    <nav className='sticky left-0 top-0 flex w-full items-center justify-between border-b border-gray-100 px-4 py-2 md:justify-end'>
+    <nav className='sticky left-0 top-0 flex w-full items-center justify-between border-b border-gray-100 px-4 py-2 dark:border-gray-900 md:justify-end'>
       <Sheet>
         <SheetTrigger className='inline-flex h-10 w-10 items-center justify-center rounded-md border border-input bg-background text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 md:hidden'>
           <Menu className='h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0' />
