@@ -18,7 +18,6 @@ import {
   TwitterIcon,
   UserIcon,
 } from 'lucide-react';
-import { mainLinks, meLinks, socialLinks } from '@/lib/data';
 
 type NavProps = {
   children: React.ReactNode;
@@ -35,12 +34,11 @@ function Sidebar({ children }: NavProps) {
 function NavigationMenu() {
   return (
     <>
-      <div className='flex flex-col px-4 py-6'>
-        <div className='flex items-center px-4'>
-          <Image src='/logo.svg' width={30} height={30} alt='Logo' />
-        </div>
-
-        <div className='overflow-auto'>
+      <div className='sticky top-0 flex items-center px-8 py-3'>
+        <Image src='/logo.svg' width={32} height={32} alt='Logo' />
+      </div>
+      <div className='flex flex-col overflow-auto'>
+        <div className='overflow-auto px-4'>
           <ul className='my-6 space-y-1'>
             <li>
               <a
