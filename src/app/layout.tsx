@@ -3,7 +3,8 @@ import type { Metadata } from 'next';
 import React from 'react';
 import { Manrope } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
-import { Sidebar, TopNav, NavigationMenu } from '@/components/navigation';
+import { Sidebar, TopNav } from '@/components/navigation/navigation';
+import { NavigationMenu } from '@/components/navigation/navigation-menu';
 
 const manrope = Manrope({ subsets: ['latin'] });
 
@@ -31,7 +32,7 @@ export default function RootLayout({
             <div className='flex flex-1 flex-col bg-white dark:bg-gray-950'>
               <TopNav />
               <main className='flex flex-col items-center justify-between overflow-auto px-4 py-8'>
-                <div className='mx-auto max-w-2xl'>{children}</div>
+                <div className='mx-auto w-full max-w-2xl'>{children}</div>
               </main>
             </div>
           </div>
