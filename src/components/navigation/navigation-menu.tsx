@@ -82,7 +82,7 @@ export function NavigationMenu() {
             </span>
             <ul className='mb-6 space-y-1'>
               <li>
-                <a
+                <Link
                   href='/about'
                   className={cn(
                     'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100',
@@ -91,7 +91,7 @@ export function NavigationMenu() {
                 >
                   <UserIcon size={16} />
                   About
-                </a>
+                </Link>
               </li>
               <li>
                 <Link
