@@ -209,7 +209,7 @@ export function NavigationMenu() {
 
               <span className='text-xs text-gray-500 dark:text-gray-300'>
                 {' '}
-                Product Developer{' '}
+                Product Engineer{' '}
               </span>
             </p>
           </div>
