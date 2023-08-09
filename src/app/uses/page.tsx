@@ -20,29 +20,30 @@ export default function Uses() {
       </h2>
       <ul className='my-6 ml-6 list-disc [&>li]:mt-2'>
         <li>
-          2017 13" MacBook Pro
+          2017 13&quot; MacBook Pro
           <p className='pt-2 text-sm text-gray-600 dark:text-gray-300'>
             I bought this new in 2019 and have regretted it ever since. I plan
-            on upgrading to a 2023 15" M2 MacBook Air by the end of the year.
+            on upgrading to a 2023 15&quot; M2 MacBook Air by the end of the
+            year.
           </p>
         </li>
         <li>
           Logitech MX Mechanical Mini for Mac Keyboard
           <p className='pt-2 text-sm text-gray-600 dark:text-gray-300'>
-            I've always been a fan mechanical keyboards, but I hated the loud,
-            obnoxious ones, which I know is a bit of an oxymoron. I recently
-            upgraded to the Logitech MX Mechanical as I've used their MX mouse
-            for years.
+            I&apos;ve always been a fan mechanical keyboards, but I hated the
+            loud, obnoxious ones, which I know is a bit of an oxymoron. I
+            recently upgraded to the Logitech MX Mechanical as I&apos;ve used
+            their MX mouse for years.
           </p>
         </li>
         <li>
           Logitech MX Master 2S Mouse
           <p className='pt-2 text-sm text-gray-600 dark:text-gray-300'>
-            You'll notice a trend that I really enjoy Logitech products. This
-            may be due to the fact that I have not tried out many alternatives,
-            because I have been so happy since the start. The quality is so nice
-            and, in my experience, their products last much longer than many
-            electronics today.
+            You&apos;ll notice a trend that I really enjoy Logitech products.
+            This may be due to the fact that I have not tried out many
+            alternatives, because I have been so happy since the start. The
+            quality is so nice and, in my experience, their products last much
+            longer than many electronics today.
           </p>
         </li>
       </ul>
@@ -53,7 +54,7 @@ export default function Uses() {
         <li>
           Raycast
           <p className='pt-2 text-sm text-gray-600 dark:text-gray-300'>
-            'Nuff Said.
+            &apos;Nuff Said.
           </p>
         </li>
       </ul>
