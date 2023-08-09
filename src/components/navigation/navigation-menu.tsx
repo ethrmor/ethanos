@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTheme } from 'next-themes';
 import {
@@ -20,15 +21,15 @@ import {
 import { cn } from '@/lib/utils';
 
 export function NavigationMenu() {
-  const { theme } = useTheme();
   const pathname = usePathname();
+  const { theme } = useTheme();
 
   return (
     <>
       <div className='flex flex-col overflow-auto'>
         <div className='sticky top-0 flex items-center px-8 py-3'>
           <Image
-            src={theme !== 'light' ? '/logo-white.svg' : '/logo.svg'}
+            src={theme === 'light' ? '/logo.svg' : '/logo-white.svg'}
             width={32}
             height={32}
             alt='Logo'
@@ -39,7 +40,7 @@ export function NavigationMenu() {
           <div className='overflow-auto px-4'>
             <ul className='my-6 space-y-1'>
               <li>
-                <a
+                <Link
                   href='/'
                   className={cn(
                     'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100',
@@ -48,10 +49,10 @@ export function NavigationMenu() {
                 >
                   <HomeIcon size={16} />
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href='/projects'
                   className={cn(
                     'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100',
@@ -60,10 +61,10 @@ export function NavigationMenu() {
                 >
                   <Code2Icon size={16} />
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href='/writing'
                   className={cn(
                     'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100',
@@ -72,7 +73,7 @@ export function NavigationMenu() {
                 >
                   <PenLineIcon size={16} />
                   Writing
-                </a>
+                </Link>
               </li>
             </ul>
 
@@ -93,7 +94,7 @@ export function NavigationMenu() {
                 </a>
               </li>
               <li>
-                <a
+                <Link
                   href='/uses'
                   className={cn(
                     'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100',
@@ -102,10 +103,10 @@ export function NavigationMenu() {
                 >
                   <MonitorIcon size={16} />
                   Uses
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href='/bookmarks'
                   className={cn(
                     'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100',
@@ -114,10 +115,10 @@ export function NavigationMenu() {
                 >
                   <BookMarkedIcon size={16} />
                   Bookmarks
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href='/recs'
                   className={cn(
                     'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100',
@@ -126,10 +127,10 @@ export function NavigationMenu() {
                 >
                   <ShoppingBagIcon size={16} />
                   Recs
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href='/notes'
                   className={cn(
                     'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100',
@@ -138,10 +139,10 @@ export function NavigationMenu() {
                 >
                   <ScrollTextIcon size={16} />
                   Notes
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href='/contact'
                   className={cn(
                     'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100',
@@ -150,7 +151,7 @@ export function NavigationMenu() {
                 >
                   <PhoneIcon size={16} />
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
 
@@ -159,34 +160,34 @@ export function NavigationMenu() {
             </span>
             <ul className='mb-6 space-y-1'>
               <li>
-                <a
+                <Link
                   href='https://github.com/ermorrpheus'
                   target='_blank'
                   className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
                 >
                   <GithubIcon size={16} />
                   Github
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href='https://www.twitter.com/the100xdev'
                   target='_blank'
                   className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
                 >
                   <TwitterIcon size={16} />
                   Twitter
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href='https://www.linkedin.com/in/ethanmorris1/'
                   target='_blank'
                   className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
                 >
                   <LinkedinIcon size={16} />
                   LinkedIn
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -208,7 +209,7 @@ export function NavigationMenu() {
 
               <span className='text-xs text-gray-500 dark:text-gray-300'>
                 {' '}
-                Software Developer{' '}
+                Product Developer{' '}
               </span>
             </p>
           </div>
