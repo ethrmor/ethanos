@@ -29,7 +29,7 @@ export function NavigationMenu() {
       <div className='flex flex-col overflow-auto'>
         <div className='sticky top-0 flex items-center px-8 py-3'>
           <Image
-            src={theme === 'light' ? '/logo.svg' : '/logo-white.svg'}
+            src={theme === 'dark' ? '/logo-white.svg' : '/logo.svg'}
             width={32}
             height={32}
             alt='Logo'
