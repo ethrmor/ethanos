@@ -5,8 +5,10 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTheme } from 'next-themes';
 import {
+  ArrowUpRight,
   BookMarkedIcon,
   Code2Icon,
+  ExternalLinkIcon,
   GithubIcon,
   HomeIcon,
   LinkedinIcon,
@@ -43,8 +45,10 @@ export function NavigationMenu() {
                 <Link
                   href='/'
                   className={cn(
-                    'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100',
-                    pathname === '/' ? 'bg-main text-gray-100' : null
+                    'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium',
+                    pathname === '/'
+                      ? 'bg-main text-gray-100'
+                      : 'text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
                   )}
                 >
                   <HomeIcon size={16} />
@@ -55,8 +59,10 @@ export function NavigationMenu() {
                 <Link
                   href='/projects'
                   className={cn(
-                    'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100',
-                    pathname === '/projects' ? 'bg-main text-gray-100' : null
+                    'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium',
+                    pathname === '/projects'
+                      ? 'bg-main text-gray-100'
+                      : 'text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
                   )}
                 >
                   <Code2Icon size={16} />
@@ -67,8 +73,10 @@ export function NavigationMenu() {
                 <Link
                   href='/writing'
                   className={cn(
-                    'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100',
-                    pathname === '/writing' ? 'bg-main text-gray-100' : null
+                    'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium',
+                    pathname === '/writing'
+                      ? 'bg-main text-gray-100'
+                      : 'text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
                   )}
                 >
                   <PenLineIcon size={16} />
@@ -85,8 +93,10 @@ export function NavigationMenu() {
                 <Link
                   href='/about'
                   className={cn(
-                    'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100',
-                    pathname === '/about' ? 'bg-main text-gray-100' : null
+                    'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium',
+                    pathname === '/about'
+                      ? 'bg-main text-gray-100'
+                      : 'text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
                   )}
                 >
                   <UserIcon size={16} />
@@ -97,8 +107,10 @@ export function NavigationMenu() {
                 <Link
                   href='/uses'
                   className={cn(
-                    'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100',
-                    pathname === '/uses' ? 'bg-main text-gray-100' : null
+                    'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium',
+                    pathname === '/uses'
+                      ? 'bg-main text-gray-100'
+                      : 'text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
                   )}
                 >
                   <MonitorIcon size={16} />
@@ -109,8 +121,10 @@ export function NavigationMenu() {
                 <Link
                   href='/bookmarks'
                   className={cn(
-                    'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100',
-                    pathname === '/bookmarks' ? 'bg-main text-gray-100' : null
+                    'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium',
+                    pathname === '/bookmarks'
+                      ? 'bg-main text-gray-100'
+                      : 'text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
                   )}
                 >
                   <BookMarkedIcon size={16} />
@@ -121,8 +135,10 @@ export function NavigationMenu() {
                 <Link
                   href='/recs'
                   className={cn(
-                    'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100',
-                    pathname === '/recs' ? 'bg-main text-gray-100' : null
+                    'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium',
+                    pathname === '/recs'
+                      ? 'bg-main text-gray-100'
+                      : 'text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
                   )}
                 >
                   <ShoppingBagIcon size={16} />
@@ -133,8 +149,10 @@ export function NavigationMenu() {
                 <Link
                   href='/notes'
                   className={cn(
-                    'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100',
-                    pathname === '/notes' ? 'bg-main text-gray-100' : null
+                    'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium',
+                    pathname === '/notes'
+                      ? 'bg-main text-gray-100'
+                      : 'text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
                   )}
                 >
                   <ScrollTextIcon size={16} />
@@ -145,8 +163,10 @@ export function NavigationMenu() {
                 <Link
                   href='/contact'
                   className={cn(
-                    'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100',
-                    pathname === '/contact' ? 'bg-main text-gray-100' : null
+                    'flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium',
+                    pathname === '/contact'
+                      ? 'bg-main text-gray-100'
+                      : 'text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
                   )}
                 >
                   <PhoneIcon size={16} />
@@ -163,30 +183,39 @@ export function NavigationMenu() {
                 <Link
                   href='https://github.com/ermorrpheus'
                   target='_blank'
-                  className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
+                  className='flex items-center justify-between rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
                 >
-                  <GithubIcon size={16} />
-                  Github
+                  <div className='flex items-center gap-2'>
+                    <GithubIcon size={16} />
+                    Github
+                  </div>
+                  <ExternalLinkIcon size={16} />
                 </Link>
               </li>
               <li>
                 <Link
                   href='https://www.twitter.com/the100xdev'
                   target='_blank'
-                  className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
+                  className='flex items-center justify-between rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
                 >
-                  <TwitterIcon size={16} />
-                  Twitter
+                  <div className='flex items-center gap-2'>
+                    <TwitterIcon size={16} />
+                    Twitter
+                  </div>
+                  <ExternalLinkIcon size={16} />
                 </Link>
               </li>
               <li>
                 <Link
                   href='https://www.linkedin.com/in/ethanmorris1/'
                   target='_blank'
-                  className='flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
+                  className='flex items-center justify-between rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700  dark:text-gray-300 dark:hover:bg-gray-900 dark:hover:text-gray-100'
                 >
-                  <LinkedinIcon size={16} />
-                  LinkedIn
+                  <div className='flex items-center gap-2'>
+                    <LinkedinIcon size={16} />
+                    LinkedIn
+                  </div>
+                  <ExternalLinkIcon size={16} />
                 </Link>
               </li>
             </ul>
