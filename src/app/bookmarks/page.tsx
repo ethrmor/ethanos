@@ -6,8 +6,8 @@ export default function Bookmarks() {
       </h1>
       <p className='leading-7 [&:not(:first-child)]:mt-6'>
         Welcome to my bookmarks page! I just started using Raindrop.io again and
-        I love it. I'm still in the process of adding all of my bookmarks, but
-        I'll be sure to update this page when I'm done.
+        I love it. I&apos;m still in the process of adding all of my bookmarks,
+        but I&apos;ll be sure to update this page when I&apos;m done.
       </p>
     </>
   );

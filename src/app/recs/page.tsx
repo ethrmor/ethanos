@@ -7,9 +7,9 @@ export default function Recs() {
       <p className='leading-7 [&:not(:first-child)]:mt-6'>
         Yet another page that was inspired by Wes Bos (and Scott Tolinski). Recs
         includes all of the gadgets, tools, and services that I uwould recommend
-        to my family and friends. The list of things I've learned from random
-        people on the internet is long, so why not share the things I love with
-        others?
+        to my family and friends. The list of things I&apos;ve learned from
+        random people on the internet is long, so why not share the things I
+        love with others?
       </p>
     </>
   );
