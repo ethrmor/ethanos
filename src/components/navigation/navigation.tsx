@@ -2,6 +2,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { ModeToggle } from '../mode-toggle';
 import { Menu } from 'lucide-react';
 import { NavigationMenu } from './navigation-menu';
+import Image from 'next/image';
 
 type NavProps = {
   children: React.ReactNode;
@@ -30,6 +31,13 @@ function TopNav() {
           <NavigationMenu />
         </SheetContent>
       </Sheet>
+      <Image
+        src='/logo.svg'
+        alt='Logo'
+        width={28}
+        height={28}
+        className='md:hidden'
+      />
       <ModeToggle />
     </nav>
   );
