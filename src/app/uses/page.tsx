@@ -15,7 +15,7 @@ export default function Uses() {
         day-to-day basis. I attempt to keep this list up-to-date, but it may not
         always be. Feel free to check back periodically for updates!
       </p>
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
+      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight transition-colors first:mt-0 lg:text-3xl'>
         Hardware
       </h2>
       <ul className='my-6 ml-6 list-disc [&>li]:mt-2'>
@@ -47,7 +47,7 @@ export default function Uses() {
           </p>
         </li>
       </ul>
-      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0'>
+      <h2 className='mt-10 scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight transition-colors first:mt-0 lg:text-3xl'>
         Software
       </h2>
       <ul className='my-6 ml-6 list-disc [&>li]:mt-2'>
