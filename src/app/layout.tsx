@@ -1,10 +1,11 @@
-import '../styles/globals.css';
-import type { Metadata } from 'next';
-import React from 'react';
-import { Manrope } from 'next/font/google';
+import NavigationMenu from '@/components/navigation/navigation-menu';
+import Sidebar from '@/components/navigation/sidebar';
+import TopNav from '@/components/navigation/top-nav';
 import { ThemeProvider } from '@/components/theme-provider';
-import { Sidebar, TopNav } from '@/components/navigation/navigation';
-import { NavigationMenu } from '@/components/navigation/navigation-menu';
+import type { Metadata } from 'next';
+import { Manrope } from 'next/font/google';
+import React from 'react';
+import '../styles/globals.css';
 
 const manrope = Manrope({ subsets: ['latin'] });
 

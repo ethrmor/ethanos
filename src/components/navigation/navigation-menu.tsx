@@ -1,9 +1,6 @@
 'use client';
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useTheme } from 'next-themes';
+import { cn } from '@/lib/utils';
 import {
   BookMarkedIcon,
   Code2Icon,
@@ -19,9 +16,12 @@ import {
   TwitterIcon,
   UserIcon,
 } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { useTheme } from 'next-themes';
+import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
-export function NavigationMenu() {
+export default function NavigationMenu() {
   const pathname = usePathname();
   const { theme } = useTheme();
 
@@ -237,7 +237,7 @@ export function NavigationMenu() {
 
               <span className='text-xs text-gray-500 dark:text-gray-300'>
                 {' '}
-                Product Engineer{' '}
+                Software Developer{' '}
               </span>
             </p>
           </div>

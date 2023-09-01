@@ -23,7 +23,7 @@ export default function Projects() {
           />
         </div>
         <div className='p-4'>
-          <h3 className='text-xl font-semibold tracking-tight'>Project Name</h3>
+          <h3 className='text-xl font-semibold tracking-tight'>Name TBD</h3>
           <p className='mt-2'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             voluptates, voluptatem quibusdam, quae voluptatibus, quod
